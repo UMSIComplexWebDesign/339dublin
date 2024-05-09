@@ -99,6 +99,9 @@ align-items: center; /* Center vertically */
 justify-content: center; /* Center horizontally */
 
 
+border-radius:7% 93% 0% 100% / 91% 12% 88% 9%;
+
+
 
 background-image: url('../images/wolftone.png'); /* Specify the path to your image */
 background-size: contain; 
@@ -130,6 +133,12 @@ background-repeat: no-repeat; /* Do not repeat the image */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+@media(hover: hover) and (pointer: fine) {
+.student-card a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+}
+
 
 .blog-gallery{
     display:grid;
@@ -141,6 +150,25 @@ background-repeat: no-repeat; /* Do not repeat the image */
 @media screen and (min-width: 776px){
     .blog-gallery{
         grid-template-columns: 45% 45%;
-        justify-content: ;
+        grid-gap: 20px
+        /* justify-content: ; */
     }
+}
+
+@media screen and (min-width: 995px){
+    .blog-gallery{
+        grid-template-columns: 30% 30 30%;
+        grid-gap: 20px
+        /* justify-content: ; */
+    }
+}
+
+.img-grid{
+    display: grid;
+}
+
+.img-grid img{
+    width: 80%;
+    border: solid blue 3px;
+    border-radius:7% 93% 0% 100% / 91% 12% 88% 9%;
 }
